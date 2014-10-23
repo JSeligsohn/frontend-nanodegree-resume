@@ -6,7 +6,7 @@
 
 
 
-.education-entry, .work-entry, .project-entry {
+.education-entry, .work-entry, .project-entry, .course-entry {
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -55,6 +55,10 @@ h2, h3, h4, h5 {
   color: #999999;
   line-height: 16px;
   float: left;
+}
+
+.course-entry .date-text {
+  float: none;
 }
 
 .location-text {
@@ -129,7 +133,14 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  -webkit-justify-content: center;
+  justify-content: center;
   padding: 10px;
+}
+
+.flex-item {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
 }
 
 .center-content {
@@ -150,6 +161,7 @@ ul {
 
 img {
   padding: 10px;
+  width: 25%;
 }
 
 
@@ -171,6 +183,10 @@ span {
 
 #letsConnect {
   text-align: center;
+}
+
+#footerContacts {
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 1024px) {
